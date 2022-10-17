@@ -1,0 +1,42 @@
+POM --> page object model 
+
+
+private  --> secured, cant access 
+
+POM --> page object model --> secured + access outside the class
+
+R.C ---> Source generate  getters and setters
+
+getters and setters
+
+public 
+
+getters ---> return the value
+
+setters ---> set the value
+
+***************************************************************************
+
+access modifier 
+
+4 types .....
+
+public --> global access 
+private --> access only within the class
+default --> inside the package 
+protected --> extends 
+
+****************************************************
+
+POM : Page Object Model :
+
+            Collection of webElements for every page and stored in a seperate class and make it as private
+
+
+@FindBy(att.name="att.value")
+
+private WebElement signIn;
+
+******************************************************
+
+WebElement refName=driver.findElement(By.loc(""));

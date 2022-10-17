@@ -1,0 +1,189 @@
+Data driven :
+
+        It is a framework
+
+        The operations to be performed is stored in an external file like excel sheet.
+
+Apache POI-->
+
+POI :
+
+     Poor obfuscation Implementation is an API that collects java libraries and help is to read, write data in excel.
+
+API -> Application programming Interface
+
+Read --> to read the data from the excel
+
+Write --> flow of data into the excel
+
+Dependencies and versions :
+
+poi - 4.1.2
+
+poi-ooxml - 4.1.2
+
+poi-ooxml-schemas - 4.1.2
+
+Excel -> file -> workbook -> sheets -> rows -> cells -> data
+
+Test data formats : excelfiles,text files, csv, database(table)--> drive the data to use the framework.
+
+Workflow :
+
+         * Excel
+
+              * Workbook(I)
+
+                         HSSFWorkbook( Class ) --> Before MS-Office 2003
+
+                         XSSFWorkbook ( Class) --> After 2007
+
+Workbook (Interface) :
+
+           A Workbook represents a Microsoft Excel file.
+
+           used for creating and maintaining the spreadsheet.
+
+           A workbook contains many sheets.
+
+Types :
+
+          HSSFWorkbook (Class) - used to read/write data to Microsoft Excel file in .xls format.
+
+                                Ms-Office versions 97-2003.
+
+                                HSSF -> HoribleSpreadsheet Format.
+
+          XSSFWorkbook (Class) - used to read-write data to Microsoft Excel in .xls or .xlsx format 
+
+                                Ms-Office versions 2007 or later.
+
+                                XSSF -> XML SpreadSheet Format.
+
+Workbook w=new XSSFWorkbook();
+
+workflow :
+
+     * Excel
+
+          *workbook(I)
+
+                HSSFWork(Class) --> Before MS-OFFICE 2003
+
+                XSSFWorkbook (Class) --> After 2007
+
+                *Sheet(I)
+
+                     *Row(I)
+
+                         *Cell(I)
+
+                             *CellType(E)
+
+                                   String --> getStringCellValue()
+
+                                   Numeric --> getNumericCellValue()
+
+Sheet (Interface) :
+
+          A sheet it contains number of rows and columns .
+
+For
+
+  create Sheet -> createSheet(name)  
+
+  get the sheet -> 
+
+                    getSheetAt(index)
+
+                    getSheet(name)
+
+Row (Interface) :
+
+           A row represents a collection of cells, which is used to represent a row in sheet.
+
+             For
+
+                create Row -> createRow(index)
+                get the the row -> getRow(index)
+
+                get Size -> getPhysicalNumberOfRows()
+
+Cell (Interface) :
+
+            A cell is indicated by a row and column combination.
+
+            Data can be the type such as String, numeric value, or data.
+
+           For
+
+           create cell-> createCell(index)
+ 
+           get the cell-> getCell(index)
+
+           get size -> getPhysicalNumberOfCells()  
+
+           get type of cell-> getCellType()
+
+                        String - getStringCellValue()
+
+                        return type is String
+
+                        Number - getNumericCellValue()
+
+                        return type is double
+
+File Input Stream 
+
+               Flow of data from the source
+
+File Output Stream 
+
+               Flow of data into destination
+
+Read Particular Data From Excel :
+
+Create a object file and pass the parameter as .xlsx location 
+
+create a object for fileinputstream and pass the parameter as file
+
+Create a object for workbook along with XSSFWorkbook and pass the parameter as fis by using workbook refname
+
+            getSheetAt(index) ---> traverse into sheet
+
+            getSheet(name) ---> traverse into sheet by using sheetrefName
+
+            getRow(index) ---> traverse into particular row
+
+            getCell(index) ---> traverse into particular cell
+
+Check the cell type by using
+
+                     getCellType()
+
+                     if(refname.equals(CellType.STRING)){
+
+}
+                     string ---> getStringCellValue();
+
+                     numeric ---> getNumericCellValue();
+
+                          double ---> int
+
+Write particular Data from Excel :
+
+Create a object for file and pass the parameter as .xlsx location
+
+Create for fileinputstream and pass the parameter as file 
+
+Create a object for workbook along with XSSWorkbook and pass the parameter as fis by using workbookrefname
+
+        wb.createSheet("Name").createRow(index).createCell(index).setCellValue(data);
+
+        wb.getSheet("Name").getRow(index).createCell(Index).setCellValue(data);
+
+Create a object  for fileoutputstream and pass the parameter as file by using workbookrefName
+
+          wb.write(fileoutputstream);
+
+          wb.close();

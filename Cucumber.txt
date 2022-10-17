@@ -1,0 +1,107 @@
+Cucumber BDD :
+
+       1. This is the advanced framework
+       2. BDD Framework (Behavioural Driven Development)
+       3. We can create our own test case based on the application's behaviour in plain english language (Gherkin) in the colourful format
+
+Cucumber Installation :
+
+           Install Natural plugin in EclipseMarketplace. - http://rlogiacco.github.io/Natural/ (or) https://rlogiacco.github.io/Natural/
+
+Create a Maven Project for cucumber
+
+           1. Name it AdactinCucumber
+
+           2.src/main/java ---> com.adactin.baseclass
+                 ---> BaseClass
+
+           3.src/test/java ---> create 3 packages.
+                   1.com.adactin.feature
+                   2.com.adactin.runner
+                   3.com.adactin.stepdefinition
+
+Dependencies : 
+
+              info.cukes.MavenRepository
+
+              cucumber -j unit (1.2.5)
+
+              cucumber java (1.2.5)
+                            
+              cucumber core (1.2.5)
+
+Three Important files In cucumber :
+
+1.Feature  File
+
+2.Step Definition
+
+3.Test Runner
+
+1.Feature File :
+
+Likewise Test Cases must be written in a plain english (Gherkins) Language.
+each and every step procedure. 
+
+Keywords :
+
+        Feature:      Overall Functionality
+        Scenario:      Particular Fuctionality for each module
+        Given ---->    Pre-Condition
+        When ---->     Action
+        And ---->      Additional Action
+        Then ---->     positive 
+        But ---->      Negative
+
+************************************************************************************************************
+Cucumber Options :
+
+features : path of feature file
+
+glue  : path of step definition
+
+monochrome : if it's true -> it will remove special characters in console and it gives in a readable (case-sensitive).
+
+
+dryRun :
+
+        it will check the Feature file and step definition without actually running
+
+strict :
+
+        true -> it shows exception
+
+        false -> it doesnt show any exception
+
+tags :           to run a particular scenario
+
+More than one tag : tags=("@tagName1, @tagName2")
+
+To neglect an one tag : tags=("~@tagName")
+
+plugin :
+
+        For html Report : {"html:Report/Cucumber_Report", // html:Folder/name
+
+        For Pretty Report : "pretty", ---> it will print in console
+
+        For json Report : "json:Report/Cucumber.json",  //json:Folder/name
+
+       For Cucumber Extent Report : "com.cucumber.listener.ExtentCucumberFormatter:Folder/File.html"}
+
+                For Cucumber Extent Report :
+
+          vimalselvam - > cucumber-extentreport (3.0.2)
+
+          aventstack - extentreport (3.1.2)
+
+Maven plugin :  
+
+maven --> plugin --> 
+
+maven-compiler-plugin
+
+maven-surefire-plugin
+
+pom.xml --> right click --> run --> Goals --> install --> run .
+

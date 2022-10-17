@@ -1,0 +1,124 @@
+Base class :
+
+      Collection of reusable methods
+
+      UtilityFiles / Global Files
+
+      Location : src/main
+
+
+maven projects 
+
+src/main  --> pom, base class --> collection of reusable methods --> 
+
+src/test --> runner class, frameworks
+
+
+browser Version -----------> .exe file version
+
+mismatch : SessionNotCreated
+
+System.setProperty --> mismatch 
+
+IllegelStateException
+
+
+
+
+
+
+
+
+
+takeScreenshot
+
+getScreenshotAs(){
+
+takeScreenshot ts=(takeScreenshot) driver;
+
+File source=ts.getScreenshotAs(OutputType.File);
+
+File destination=new File("path\\filename.png");
+
+FileUtils.copyFile(source, destination);
+
+}
+
+int a=10;
+
+int b=20;
+
+int c=a+b;
+
+System.out.println(c);
+
+private int sum(int a, int b){
+
+int c=a+b;
+
+System.out.println(c);
+
+return c;
+
+main{
+
+Addition a=new Addition();
+
+a.sum(12,13);
+
+
+}
+
+
+**************************************************
+
+
+sum(String name, int age){
+
+syso(name);
+
+}
+
+
+main(){
+
+sum("Vivek");
+
+sum(24);
+
+*********************************************
+
+144 lines
+
+10 lines
+
+
+***************************************************
+
+WebElement methods 
+
+WebDriver methods
+
+sendkeys()
+
+WebDriver driver=new ChromeDriver();
+
+
+*******************************************************
+
+Parent class of all class in java is Object
+
+Parent class of all interface in java is Iterable
+
+Parent class of all interface in Selenium is Search Context
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+1.MAVEN - Build Management tool 
+--------------------------------
+can maintain proper structure
+can manage dependencies on our behalf( jar ) 
+can build code for us
+Can create documentation Sites
+
+2.How to create maven project ?
+--------------------------------
+***Check the internet 
+File --> New --> Project 
+Maven --> Maven Project--> Next
+Archetype:-->Templates
+Use default work space --> Next
+Search --> QuickStart 1.1
+
+3.Terminologies
+-----------------------------------
+GROUP ID _    ( project name before - com ) Ex:com.google
+	companyname
+ArtifactID _   project name Ex:youtube,blogger,drive,and their version details
+need to check internet 
+Version:Version number
+
+4.Next Step:
+------------
+add dependencies in POM.xml
+
+
+
+
+Maven Central repository ( dependencies ) 
+
+5.POM                               POM.xml                                                POM  
+page object model            project object model - mark up language      page object manager
+
+
+6.dependencies
+maven repository or central repository or remote repository 
+
+

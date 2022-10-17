@@ -1,0 +1,108 @@
+Source Code Management --> Git
+
+Push Commands.
+
+Step 1 : For Configuration
+
+         git config --global user.email "emailid"
+
+         git config --global user.name "name"
+
+Step 2 : Initialize the local repository (repo)
+
+         git init
+
+Step 3 : Add all the files into local repo
+
+         git add .
+
+         .  ---> all files
+
+Step 4 : For Declaration 
+
+         git commit -m "msg"
+
+Step 5 : Connect to remote repo
+
+         git remote add origin repositry url
+
+Step 6 : Mode
+
+        git push -u origin master
+
+SCM : 
+
+     GITHUB
+
+CICD Tool : 
+
+     Continuous Integration Continuous Deployment
+
+Jenkins
+
+Dream 11 Application 
+
+6 hours
+
+localhost:8080 (or) localhost:1
+
+working tree
+
+remote Repo(GitHub)
+
+Jenkins (Server)
+
+
+
+Schedule timing
+
+* * * * *
+
+* ---> Minutes
+
+* ---> Hours
+
+* ---> Date
+
+* ---> Month
+
+* ---> Day of the week
+
+       0,7 ---> Sunday
+
+       1 ---> Monday
+
+       2 ---> Tuesday
+
+       3 ---> Wednesday
+
+Eg :
+
+Every day 6 : 30 Pm
+
+30 18 * * *
+
+Every Monday 10 Am
+
+H 10 * * 1
+
+Every Month 17th day 10 : 10 Pm 
+
+10 22 17 * *
+
+October Month 17th day 10 : 10 Pm 
+
+10 22 17 10 *
+
+Every Month 17th day sunday 8:59Pm
+
+59 20 17 * 0 (or) 7
+
+
+
+
+
+
+
+
+

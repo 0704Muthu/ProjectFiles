@@ -1,0 +1,46 @@
+parameter :
+
+1.Path parameter
+
+2.Query parameter
+
+*******************************
+
+https://realm.mongodb.com/groups/61f75ad6b488fd5c7dd7dde5/apps/61fa014de96b7c92d8399067/dashboard
+
+
+https://testproject.io/?
+
+utm_source=google-ads
+
+& utm_campaign=website_testing
+
+& utm_agid=116246299425&utm_term=automation%20testing&creative=492868597094&device=c
+& placement
+& gclid=Cj0KCQiA0eOPBhCGARIsAFIwTs5djQ9OlNUndUoVG21T_xXXQNTNym95P94byWASx3-aez-Q-AUmcMsaAvq_EALw_wcB
+
+
+***************************************************************************************************************
+
+Rest API :
+
+Representational State Transfer
+
+JSON object & JSON Array.
+
+*************************************************************
+
+Rest assured 4.3.1
+
+Json-path 4.3.1
+
+Json-schema-validator 4.3.1
+
+xml-path 4.3.1
+
+*************************************************************
+
+
+
+
+

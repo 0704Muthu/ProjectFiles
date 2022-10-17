@@ -1,0 +1,52 @@
+Enum vs Enumerator
+
+Class vs Interface
+
+Constructor vs Method vs Block
+
+WebDriver driver = new ChromeDriver();
+
+*********************************************************************************
+
+Pojo - Plain Old Java Object
+------------------------------
+
+POJO class contains variables and their Getters and Setters. 
+
+Getters and Setters :
+
+
+           Getters and setters are used to protect your data, particularly 
+when creating classes. 
+
+           For each instance variable, a getter method returns 
+its value while a setter method sets or updates its value.... 
+
+           The getter method returns the value of the attribute. 
+The setter method takes a parameter and assigns it to the attribute.
+
+*************************************************************************************************
+
+ClassA 
+
+private method1(){
+
+
+}
+
+
+classB
+
+main{
+
+A obj=new A();
+
+obj.method1();
+
+
+} 
+
+
+
+ 
+

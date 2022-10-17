@@ -1,0 +1,20 @@
+Driver work flow
+
+                      Base Class.getBrowser()
+                                  |
+                      Test Runner(driver) ---> chrome
+                                  |
+                      step definition
+
+                      driver= Test_Runner.driver
+                                  |
+                       each and every pom page
+
+
+Cucumber
+
+Feature file --> Teat case
+
+Step defintion --> Snippets
+
+Test Runner --> run
